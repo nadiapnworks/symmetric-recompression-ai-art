@@ -1,0 +1,6 @@
+,akurasi,akurasi,presisi,presisi,recall,recall,f1,f1,roc_auc,roc_auc,pr_auc,pr_auc,benar_human,benar_human,benar_latent_diffusion,benar_latent_diffusion,benar_stable_diffusion,benar_stable_diffusion,auc_manusia_vs_LD,auc_manusia_vs_LD,auc_manusia_vs_SD,auc_manusia_vs_SD
+,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std,mean,std
+kondisi,,,,,,,,,,,,,,,,,,,,,,
+asli,0.9877,0.0084,0.9842,0.0105,0.9913,0.0069,0.9877,0.0083,0.9993,0.0006,0.9993,0.0007,0.984,0.0106,0.988,0.0119,0.9947,0.003,0.9992,0.0007,0.9994,0.0005
+normal,0.9883,0.0049,0.9907,0.0054,0.986,0.0109,0.9883,0.0049,0.9995,0.0004,0.9995,0.0004,0.9907,0.0055,0.988,0.0145,0.984,0.0101,0.9996,0.0004,0.9993,0.0005
+riwayat_disamakan,0.98,0.0046,0.9808,0.0126,0.9793,0.0109,0.98,0.0046,0.9991,0.0006,0.9991,0.0006,0.9807,0.013,0.9613,0.0218,0.9973,0.0037,0.9983,0.0011,0.9998,0.0002

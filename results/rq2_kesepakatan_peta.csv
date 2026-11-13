@@ -1,0 +1,10 @@
+kelompok,source,rho_gc_occ,iou_R,ciou_gc,ciou_occ,occ_patch_rho
+lintas generator,human,0.183,0.218,0.207,0.098,
+lintas generator,latent_diffusion,0.283,0.255,0.13,0.135,
+lintas generator,stable_diffusion,0.167,0.209,0.213,0.074,
+normal 5-fold,human,0.191,0.212,0.227,0.095,
+normal 5-fold,latent_diffusion,0.422,0.322,0.245,0.243,
+normal 5-fold,stable_diffusion,0.295,0.249,0.191,0.157,
+riwayat_disamakan 5-fold,human,0.301,0.254,0.166,0.126,0.709
+riwayat_disamakan 5-fold,latent_diffusion,0.318,0.283,0.234,0.21,0.699
+riwayat_disamakan 5-fold,stable_diffusion,0.199,0.213,0.229,0.13,0.557

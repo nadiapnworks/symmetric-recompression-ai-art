@@ -1,0 +1,8 @@
+tanggal: 2026-11-11 19:42
+python: 3.13.16
+torch: 2.14.1+cu130
+torchvision: 0.29.1+cu130
+pillow: 11.3.0
+gpu: Tesla T4
+occlusion: kotak 32, langkah 16; pembanding kotak 48, langkah 24
+area sorotan: 0.2; peta acak: 10; blur: kernel 21, sigma 7.0; subset: 0.2
