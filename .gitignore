@@ -1,0 +1,11 @@
+# dataset images and derived images are never committed
+*.jpg
+*.jpeg
+*.zip
+# model weights and raw attribution maps
+*.pt
+*.npz
+# credentials
+kaggle.json
+.ipynb_checkpoints/
+.DS_Store
