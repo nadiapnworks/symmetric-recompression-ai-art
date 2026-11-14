@@ -12,7 +12,7 @@ Do not copy `models/`, `peta/`, `peta_logit/`, `peta_simetris/`, `peta_seed2/` (
 
 | Article | Source file | Produced by |
 |---|---|---|
-| Table 1 (file properties) and metadata baseline | metadata tables of notebook 02 | `02_metadata_normalization` |
+| Table 1 (file properties) and metadata baseline | metadata tables of notebook 02; `audit_kualitas_per_sumber.csv`, `audit_sebaran_kualitas.csv`, `audit_aturan_baca.csv` for the whole dataset | `02`, `10` |
 | Table 2 (detector performance; unseen generator over four seeds) | `rq1_detektor_ringkasan.csv`, `detektor_runs/simetris_fold*.json`, `rq1_lintas_generator_per_seed.csv` | `03`, `07`, `09` |
 | Table 3 (compression matrix, two seeds) | `rq1_matriks_kompresi.csv`, `rq1_matriks_kompresi_seed2.csv` | `07`, `09` |
 | Table 4 (color and blur ablation) | `rq1_uji_warna_detail_simetris_per_fold.csv` | `07_symmetric_condition` |

@@ -22,6 +22,8 @@ This file records every change made to the analysis plan after work began, the r
 
 9. **Replication with further seeds added.** The symmetric and one-sided conditions were retrained with a second seed to separate the effect of compression history from the effect of retraining (notebook 08). After that replication failed for one pattern, the two results that still rested on single trainings were also repeated (notebook 09): the compression matrix with second-seed models of all three conditions, and the cross-generator test with three further seeds. Reading rules: see below.
 
+11. **Audit of the whole dataset added.** The compression asymmetry had been measured on the sample of 3,000 images. The JPEG settings of all 185,015 files were then read (notebook 10) so that the first claim refers to the dataset. Reading rule: see below.
+
 10. **Cross-generator models were trained twice.** They were retrained in notebook 04 so that their weights could be stored. Both runs gave the same numbers.
 
 ## Other notes
@@ -43,3 +45,6 @@ Outcome: replicated. The drops were 22.7 and 16.7 points with the first seed and
 
 **Cross-generator test (notebook 09).** The gain under the symmetric condition counts as replicated if, in each direction, the mean over four seeds is higher than under the one-sided and normalized conditions, and the symmetric run exceeds the one-sided run in at least three of four seeds.
 Outcome: replicated. Means were 21.4%, 12.1%, and 1.2% (train Latent Diffusion, test Stable Diffusion; symmetric ahead in three of four seeds) and 10.6%, 2.1%, and 2.0% (train Stable Diffusion, test Latent Diffusion; symmetric ahead in four of four).
+
+**Audit of the whole dataset (notebook 10).** The claim that the asymmetry applies to the whole dataset is used if, in both the training and the test split, at least 99% of human files have an estimated JPEG quality of 90 or higher, at least 99% of generated files have a quality of 80 or lower, and every file is a JPEG.
+Outcome: the claim applies. All 60,000 human files have quality 95 and all 125,015 generated files have quality 75 (estimated 74.8), with one quantization table per class and no exception in any style or split.
