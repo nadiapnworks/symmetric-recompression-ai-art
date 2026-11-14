@@ -1,0 +1,11 @@
+tanggal: 2026-11-13 17:06
+python: 3.13.16
+torch: 2.14.1+cu130
+torchvision: 0.29.1+cu130
+numpy: 2.4.6
+scipy: 1.16.3
+sklearn: 1.6.1
+opencv: 4.14.0
+pillow: 11.3.0
+gpu: Tesla T4
+latihan ulang dengan seed kedua: 1042 + nomor fold
