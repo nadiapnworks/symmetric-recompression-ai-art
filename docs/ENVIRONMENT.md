@@ -6,7 +6,7 @@ Versions recorded for the main steps:
 
 | Runtime | Used by | Versions |
 |---|---|---|
-| GPU (Tesla T4) | notebooks 06, 07, 08 | Python 3.13.16, PyTorch 2.14.1+cu130, torchvision 0.29.1+cu130, NumPy 2.4.6, SciPy 1.16.3, scikit-learn 1.6.1, OpenCV 4.14.0, Pillow 11.3.0 |
+| GPU (Tesla T4) | notebooks 06, 07, 08, 09 | Python 3.13.16, PyTorch 2.14.1+cu130, torchvision 0.29.1+cu130, NumPy 2.4.6, SciPy 1.16.3, scikit-learn 1.6.1, OpenCV 4.14.0, Pillow 11.3.0 |
 | CPU | notebooks 06b, 07b | Python 3.13.18, PyTorch 2.14.1+cpu, NumPy 2.4.6, pandas 2.2.3, SciPy 1.16.3, Matplotlib 3.10.0 |
 | CPU | notebook 05 | OpenCV 5.0.0 (the Colab CPU image at the time) |
 
@@ -14,7 +14,7 @@ Notebook 05 ran with OpenCV 5.0.0 and notebooks 06 and 07 with OpenCV 4.14.0. No
 
 ## Fixed settings
 
-- Random seed: 42 (sampling, folds, training seed 42 + fold index). Second-seed replication: 1042 + fold index.
+- Random seed: 42 (sampling, folds, training seed 42 + fold index). Second-seed replication: 1042 + fold index. Cross-generator test: seed 52, repeated with 1052, 2052, and 3052.
 - Detector: ResNet50 pretrained on ImageNet, all layers fine-tuned, Adam (learning rate 1e-4), cosine annealing to 1e-6, batch size 32, at most 30 epochs, early stopping with patience 5 on a validation set of 10% of the training folds, horizontal flip only, input 224 x 224.
 - Occlusion: patch 32 x 32, stride 16, mean-color fill, logit margin of the predicted class, full precision.
 - Deletion test: ten steps of 5% of the pixels; replacements: Gaussian blur (kernel 21, sigma 7) and mean color; controls: center prior and the mean of ten random maps.

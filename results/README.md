@@ -13,14 +13,13 @@ Do not copy `models/`, `peta/`, `peta_logit/`, `peta_simetris/`, `peta_seed2/` (
 | Article | Source file | Produced by |
 |---|---|---|
 | Table 1 (file properties) and metadata baseline | metadata tables of notebook 02 | `02_metadata_normalization` |
-| Table 2 (detector performance) | `rq1_detektor_ringkasan.csv`, `detektor_runs/simetris_fold*.json`, `detektor_runs/lintas_simetris_*.json` | `03_train_detector`, `07_symmetric_condition` |
-| Table 3 (compression matrix) | `rq1_matriks_kompresi.csv` | `07_symmetric_condition` |
+| Table 2 (detector performance; unseen generator over four seeds) | `rq1_detektor_ringkasan.csv`, `detektor_runs/simetris_fold*.json`, `rq1_lintas_generator_per_seed.csv` | `03`, `07`, `09` |
+| Table 3 (compression matrix, two seeds) | `rq1_matriks_kompresi.csv`, `rq1_matriks_kompresi_seed2.csv` | `07`, `09` |
 | Table 4 (color and blur ablation) | `rq1_uji_warna_detail_simetris_per_fold.csv` | `07_symmetric_condition` |
-| Table 5 (deletion test) and its intervals | `rq2_simetris_deletion.csv`, `rq2_simetris_deletion_selang_kepercayaan.csv`, `rq2_deletion_selang_kepercayaan.csv` | `07`, `07b`, `06b` |
-| Table 6 (design measures in map regions) | `rq2_simetris_elemen.csv` | `07_symmetric_condition` |
-| Figure 2 and design-measure baseline | `rq2_simetris_baseline_ukuran_desain.csv` | `07_symmetric_condition` |
-| Map agreement across conditions | `rq2_kesepakatan_antar_kondisi.csv` | `07b_manuscript_figures_cpu` |
-| Second-seed replication | `rq2_seed_kesepakatan_peta.csv`, `rq2_seed_elemen.csv` | `08_second_seed` |
+| Deletion test and its intervals (Section 3.5) | `rq2_simetris_deletion.csv`, `rq2_simetris_deletion_selang_kepercayaan.csv`, `rq2_deletion_selang_kepercayaan.csv` | `07`, `07b`, `06b` |
+| Table 5 (design measures in map regions, two conditions by two seeds) | `rq2_seed_elemen.csv` | `08_second_seed` |
+| Map agreement between trainings and conditions | `rq2_seed_kesepakatan_peta.csv`, `rq2_kesepakatan_antar_kondisi.csv` | `08`, `07b` |
+| Figure 2 and design-measure baseline | `rq2_simetris_baseline_ukuran_desain.csv`, `rq1_lintas_generator_per_seed.csv` | `07`, `09` |
 
 ## Glossary (Indonesian to English)
 

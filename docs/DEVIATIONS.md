@@ -20,7 +20,7 @@ This file records every change made to the analysis plan after work began, the r
 
 8. **Manual coding of shape and structure was dropped.** It was planned as a seventh design element. Its purpose was to name the detailed regions marked on human paintings, and that pattern was attributed to compression history.
 
-9. **Second-seed replication added.** The symmetric and one-sided conditions were retrained with a second seed to separate the effect of compression history from the effect of retraining. Reading rule: see below.
+9. **Replication with further seeds added.** The symmetric and one-sided conditions were retrained with a second seed to separate the effect of compression history from the effect of retraining (notebook 08). After that replication failed for one pattern, the two results that still rested on single trainings were also repeated (notebook 09): the compression matrix with second-seed models of all three conditions, and the cross-generator test with three further seeds. Reading rules: see below.
 
 10. **Cross-generator models were trained twice.** They were retrained in notebook 04 so that their weights could be stored. Both runs gave the same numbers.
 
@@ -36,4 +36,10 @@ This file records every change made to the analysis plan after work began, the r
 Outcome: the pattern weakened (effect sizes of 0.21 under the one-sided condition fell to between 0.04 and 0.08), and the claim was changed.
 
 **Second seed (notebook 08).** For the four detail measures on human paintings (gradient, edge density, texture contrast, homogeneity): the pattern is attributed to compression history if, with the second seed, the one-sided condition repeats the direction of the first seed with an absolute effect size of at least 0.15 on at least three of the four measures, and the symmetric condition has an absolute effect size of at most 0.10 on at least three of the four. If either condition fails, the third claim of the article is weakened.
-Outcome: to be added after notebook 08 has run.
+Outcome: the symmetric condition met its criterion (four of four measures at or below 0.10). The one-sided condition did not (none of four measures reached 0.15; the effects fell from 0.21 to between 0.08 and 0.12). The pattern is not attributed to compression history, and the third claim of the article was changed: occlusion maps are faithful for each model but differ between repeated trainings as much as between compression conditions.
+
+**Compression matrix (notebook 09).** The relocation of the shortcut counts as replicated if, for the one-sided models of the second seed, Stable Diffusion images in the symmetric version are recognized at least 10 points less often than in the one-sided version, and human paintings in the normalized version at least 10 points less often than in the one-sided version.
+Outcome: replicated. The drops were 22.7 and 16.7 points with the first seed and 23.1 and 18.3 points with the second.
+
+**Cross-generator test (notebook 09).** The gain under the symmetric condition counts as replicated if, in each direction, the mean over four seeds is higher than under the one-sided and normalized conditions, and the symmetric run exceeds the one-sided run in at least three of four seeds.
+Outcome: replicated. Means were 21.4%, 12.1%, and 1.2% (train Latent Diffusion, test Stable Diffusion; symmetric ahead in three of four seeds) and 10.6%, 2.1%, and 2.0% (train Stable Diffusion, test Latent Diffusion; symmetric ahead in four of four).

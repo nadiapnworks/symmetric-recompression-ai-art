@@ -7,10 +7,10 @@ The study trains the same ResNet50 detector under three preprocessing conditions
 ## Main findings
 
 - In AI-ArtBench, human paintings are stored at JPEG quality 95 and generated images at quality 75. File metadata alone identifies the class with 100% accuracy.
-- Recompressing only the human class moves the shortcut to the trace of the added encoding. Recompressing all classes in the same way reduces the dependence.
-- Under symmetric recompression, recognition of images from an unseen generator rises from at most 4.9% to between 15.3% and 22.1%.
-- Occlusion maps pass a deletion test in every group, yet the regions they mark on human paintings change with the compression condition.
+- Recompressing only the human class moves the shortcut to the trace of the added encoding (replicated with a second training seed). Recompressing all classes in the same way reduces the dependence.
+- Under symmetric recompression, mean recognition of images from an unseen generator over four seeds rises from 1.2% and 2.0% to 21.4% and 10.6%.
 - Color is the cue the detector depends on most. A logistic regression on three whole-image color measures transfers across generators better than the detector.
+- Occlusion maps pass a deletion test, but maps from two trainings of the same setup agree only in part, and a texture pattern on human paintings found in one training did not replicate.
 
 ## Repository layout
 
@@ -46,7 +46,8 @@ The notebooks were written for Google Colab and read and write a project folder 
 | `06b_supplementary_cpu` | Bootstrap intervals for the deletion test (one-sided condition) | CPU |
 | `07_symmetric_condition` | Symmetric condition: training, compression matrix, maps, deletion test, design measures | GPU (T4) |
 | `07b_manuscript_figures_cpu` | Bootstrap intervals for the symmetric condition, map agreement across conditions, Figure 3 | CPU |
-| `08_second_seed` | Retrains the symmetric and one-sided conditions with a second seed | GPU (T4) |
+| `08_second_seed` | Retrains the symmetric and one-sided conditions with a second seed; maps and design measures | GPU (T4) |
+| `09_replication` | Compression matrix with second-seed models; cross-generator test with three further seeds | GPU (T4) |
 
 The notebook text and the column names of the result files are in Indonesian. `results/README.md` gives a glossary and maps each table of the article to its source file.
 
