@@ -1,0 +1,16 @@
+kondisi,fold,C
+normal,0,1.0
+normal,1,0.1
+normal,2,1.0
+normal,3,1.0
+normal,4,0.1
+riwayat_disamakan,0,0.1
+riwayat_disamakan,1,0.1
+riwayat_disamakan,2,0.1
+riwayat_disamakan,3,0.1
+riwayat_disamakan,4,0.1
+simetris,0,0.1
+simetris,1,0.01
+simetris,2,0.1
+simetris,3,0.1
+simetris,4,0.1
