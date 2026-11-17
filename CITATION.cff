@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this code or these result files, please cite them as below, together with the AI-ArtBench and ArtBench-10 datasets."
+title: "Symmetric Recompression Reveals Compression Shortcuts in AI-Generated Art Detection: code and result files"
+type: software
+authors:
+  - family-names: Nabila
+    given-names: Nadia Putri
+license: MIT
+repository-code: "https://github.com/itsnadiapn/symmetric-recompression-ai-art"
+keywords:
+  - AI-generated art
+  - compression bias
+  - explainable AI
+  - image forensics
+  - shortcut learning
+version: 1.0.0

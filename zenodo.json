@@ -1,0 +1,27 @@
+{
+  "title": "Symmetric Recompression Reveals Compression Shortcuts in AI-Generated Art Detection: code and result files",
+  "upload_type": "software",
+  "description": "Google Colab notebooks, the list of sampled images, and the result files for a study of JPEG compression shortcuts in AI-generated art detection on the AI-ArtBench benchmark. A fine-tuned ResNet50 detector and a frozen CLIP ViT-L/14 encoder with a linear classifier are trained under three preprocessing conditions that differ only in compression history; the repository contains the compression matrix, cross-generator tests, color ablation, occlusion-map analyses, second-seed replications, and an audit of the JPEG settings of all 185,015 dataset files. No dataset images are included.",
+  "creators": [
+    {
+      "name": "Nabila, Nadia Putri"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "keywords": [
+    "AI-generated art",
+    "compression bias",
+    "explainable AI",
+    "image forensics",
+    "shortcut learning",
+    "AI-ArtBench"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "10.1109/TMM.2026.3743638",
+      "relation": "references",
+      "scheme": "doi"
+    }
+  ]
+}
