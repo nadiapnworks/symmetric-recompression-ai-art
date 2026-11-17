@@ -1,0 +1,1 @@
+{"nama": "lintas9_normal_latihLD_ujiSD_seed2052", "kondisi": "normal", "arah": "latih LD, uji SD", "seed": 2052, "epoch": 15, "detik": 99, "ai_dikenali": 0.0026666666666666666, "akurasi": 0.2876190476190476, "auc": 0.5603644444444444, "benar_manusia": 1.0, "benar_SD": 0.0026666666666666666}

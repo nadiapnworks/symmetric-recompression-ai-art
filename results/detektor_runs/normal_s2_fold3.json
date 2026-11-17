@@ -1,0 +1,1 @@
+{"nama": "normal_s2_fold3", "kondisi": "normal", "seed": 1045, "epoch": 13, "detik": 105, "akurasi": 0.985, "auc": 0.9980000000000001, "benar_manusia": 0.9866666666666667, "benar_LD": 0.9933333333333333, "benar_SD": 0.9733333333333334}

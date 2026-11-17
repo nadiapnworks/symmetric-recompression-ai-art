@@ -1,0 +1,1 @@
+{"nama": "simetris_s2_fold2", "kondisi": "simetris", "seed": 1044, "epoch": 10, "detik": 80, "akurasi": 0.9583333333333334, "auc": 0.9918888888888889, "benar_manusia": 0.9533333333333334, "benar_LD": 0.94, "benar_SD": 0.9866666666666667}

@@ -1,0 +1,1 @@
+{"nama": "riwayat_disamakan_s2_fold3", "kondisi": "riwayat_disamakan", "seed": 1045, "epoch": 8, "detik": 64, "akurasi": 0.9783333333333334, "auc": 0.9988777777777778, "benar_manusia": 0.9633333333333334, "benar_LD": 0.9866666666666667, "benar_SD": 1.0}

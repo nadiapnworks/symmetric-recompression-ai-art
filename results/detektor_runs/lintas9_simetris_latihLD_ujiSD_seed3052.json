@@ -1,0 +1,1 @@
+{"nama": "lintas9_simetris_latihLD_ujiSD_seed3052", "kondisi": "simetris", "arah": "latih LD, uji SD", "seed": 3052, "epoch": 17, "detik": 111, "ai_dikenali": 0.176, "akurasi": 0.4057142857142857, "auc": 0.8485622222222222, "benar_manusia": 0.98, "benar_SD": 0.176}
