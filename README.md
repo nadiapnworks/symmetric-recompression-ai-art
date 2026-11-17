@@ -2,14 +2,14 @@
 
 Code, sample list, and result files for the study of compression shortcuts in AI-generated art detection on the AI-ArtBench benchmark.
 
-The study trains the same ResNet50 detector under three preprocessing conditions that differ only in JPEG compression history, tests each model on every version of the test images, and measures what occlusion maps mark under each condition.
+The study trains a fine-tuned ResNet50 detector and a frozen CLIP ViT-L/14 encoder with a linear classifier under three preprocessing conditions that differ only in JPEG compression history, tests each model on every version of the test images, and measures what occlusion maps mark under each condition.
 
 ## Main findings
 
 - In all 185,015 files of AI-ArtBench (training and test splits), human paintings are stored at JPEG quality 95 and generated images at quality 75. File metadata alone identifies the class with 100% accuracy.
-- Recompressing only the human class moves the shortcut to the trace of the added encoding (replicated with a second training seed). Recompressing all classes in the same way reduces the dependence.
-- Under symmetric recompression, mean recognition of images from an unseen generator over four seeds rises from 1.2% and 2.0% to 21.4% and 10.6%.
-- Color is the cue the detector depends on most. A logistic regression on three whole-image color measures transfers across generators better than the detector.
+- Recompressing only the human class moves the shortcut to the trace of the added encoding, in ResNet50 (two seeds) and even more strongly in the frozen CLIP classifier. Recompressing all classes in the same way reduces the dependence.
+- For ResNet50, symmetric recompression raises mean recognition of images from an unseen generator over four seeds from 1.2% and 2.0% to 21.4% and 10.6%. For CLIP the gain holds in one direction only.
+- Color is a cue both detectors depend on. A logistic regression on three whole-image color measures transfers across generators better than either detector.
 - Occlusion maps pass a deletion test, but maps from two trainings of the same setup agree only in part, and a texture pattern on human paintings found in one training did not replicate.
 
 ## Repository layout
@@ -49,6 +49,7 @@ The notebooks were written for Google Colab and read and write a project folder 
 | `08_second_seed` | Retrains the symmetric and one-sided conditions with a second seed; maps and design measures | GPU (T4) |
 | `09_replication` | Compression matrix with second-seed models; cross-generator test with three further seeds | GPU (T4) |
 | `10_full_dataset_audit` | Reads the JPEG settings of every file in the dataset | CPU |
+| `11_clip_comparison` | Frozen CLIP ViT-L/14 with a linear classifier: 5-fold, compression matrix, cross-generator test, color ablation | GPU (T4) |
 
 The notebook text and the column names of the result files are in Indonesian. `results/README.md` gives a glossary and maps each table of the article to its source file.
 
@@ -56,7 +57,7 @@ In the article the three conditions are called normalized, one-sided, and symmet
 
 ## Software
 
-Python 3.13, PyTorch 2.14, torchvision 0.29, NumPy 2.4, SciPy 1.16, scikit-learn 1.6, OpenCV, Pillow 11.3, pandas 2.2, Matplotlib 3.10. Exact versions for each step are in `docs/ENVIRONMENT.md`. The experiments ran on Google Colab with a Tesla T4 GPU.
+Python 3.13, PyTorch 2.14, torchvision 0.29, open_clip 4.2, NumPy 2.4, SciPy 1.16, scikit-learn 1.6, OpenCV, Pillow 11.3, pandas 2.2, Matplotlib 3.10. Exact versions for each step are in `docs/ENVIRONMENT.md`. The experiments ran on Google Colab with a Tesla T4 GPU.
 
 Grad-CAM and occlusion are implemented directly in PyTorch and were checked against `pytorch-grad-cam` and Captum. The gray-level co-occurrence measures were checked against scikit-image.
 

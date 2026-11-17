@@ -6,7 +6,7 @@ Versions recorded for the main steps:
 
 | Runtime | Used by | Versions |
 |---|---|---|
-| GPU (Tesla T4) | notebooks 06, 07, 08, 09 | Python 3.13.16, PyTorch 2.14.1+cu130, torchvision 0.29.1+cu130, NumPy 2.4.6, SciPy 1.16.3, scikit-learn 1.6.1, OpenCV 4.14.0, Pillow 11.3.0 |
+| GPU (Tesla T4) | notebooks 06, 07, 08, 09, 11 (11 also open_clip 4.2.2, model ViT-L-14-quickgelu, OpenAI weights) | Python 3.13.16, PyTorch 2.14.1+cu130, torchvision 0.29.1+cu130, NumPy 2.4.6, SciPy 1.16.3, scikit-learn 1.6.1, OpenCV 4.14.0, Pillow 11.3.0 |
 | CPU | notebooks 06b, 07b | Python 3.13.18, PyTorch 2.14.1+cpu, NumPy 2.4.6, pandas 2.2.3, SciPy 1.16.3, Matplotlib 3.10.0 |
 | CPU | notebook 05 | OpenCV 5.0.0 (the Colab CPU image at the time) |
 
