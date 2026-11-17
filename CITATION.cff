@@ -6,7 +6,8 @@ authors:
   - family-names: Nabila
     given-names: Nadia Putri
 license: MIT
-repository-code: "https://github.com/itsnadiapn/symmetric-recompression-ai-art"
+repository-code: "https://github.com/nadiapnworks/symmetric-recompression-ai-art"
+doi: 10.5281/zenodo.24307985
 keywords:
   - AI-generated art
   - compression bias

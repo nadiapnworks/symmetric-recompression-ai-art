@@ -1,5 +1,7 @@
 # Symmetric Recompression Reveals Compression Shortcuts in AI-Generated Art Detection
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24307985.svg)](https://doi.org/10.5281/zenodo.24307985)
+
 Code, sample list, and result files for the study of compression shortcuts in AI-generated art detection on the AI-ArtBench benchmark.
 
 The study trains a fine-tuned ResNet50 detector and a frozen CLIP ViT-L/14 encoder with a linear classifier under three preprocessing conditions that differ only in JPEG compression history, tests each model on every version of the test images, and measures what occlusion maps mark under each condition.
@@ -67,4 +69,8 @@ The code is released under the MIT License (see `LICENSE`). The dataset images b
 
 ## Citation
 
-If you use this code or these results, please cite the article (details will be added after publication) and the two datasets.
+If you use this code or these results, please cite this archive and the two datasets. The article will be added here after publication.
+
+Nabila, N. P. (2026). *Symmetric Recompression Reveals Compression Shortcuts in AI-Generated Art Detection: code and result files* (Version v1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.24307985
+
+The DOI above always points to the latest version. Version v1.0.0 itself has the DOI 10.5281/zenodo.24307986.
