@@ -1,0 +1,3 @@
+split,manusia: % kualitas >= 90,AI: % kualitas <= 80,n manusia,n AI
+test,100.0,100.0,10000,20000
+train,100.0,100.0,50000,105015

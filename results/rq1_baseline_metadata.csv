@@ -1,0 +1,13 @@
+kondisi,perbandingan,fitur,fitur_terpakai,akurasi,akurasi_sd,auc,auc_sd,n,set_fitur
+file asli,AI vs manusia (semua),"width, height, file_size_kb, jpeg_quality_est, subsampling, progressive, has_exif","width, height, file_size_kb, jpeg_quality_est",1.0,0.0,1.0,0.0,3000,semua metadata
+file asli,AI vs manusia (semua),"file_size_kb, jpeg_quality_est, subsampling, progressive, has_exif","file_size_kb, jpeg_quality_est",1.0,0.0,1.0,0.0,3000,tanpa dimensi
+file asli,AI vs manusia (semua),file_size_kb,file_size_kb,0.7353333333333334,0.005312459150169726,0.5048188888888888,0.0014604142825044954,3000,ukuran file saja
+file asli,Manusia vs Latent Diffusion,"width, height, file_size_kb, jpeg_quality_est, subsampling, progressive, has_exif","file_size_kb, jpeg_quality_est",1.0,0.0,1.0,0.0,2250,semua metadata
+file asli,Manusia vs Latent Diffusion,"file_size_kb, jpeg_quality_est, subsampling, progressive, has_exif","file_size_kb, jpeg_quality_est",1.0,0.0,1.0,0.0,2250,tanpa dimensi
+file asli,Manusia vs Latent Diffusion,file_size_kb,file_size_kb,0.9546666666666667,0.008731947868617118,0.9903177777777777,0.002861387041710579,2250,ukuran file saja
+file asli,Manusia vs Stable Diffusion,"width, height, file_size_kb, jpeg_quality_est, subsampling, progressive, has_exif","width, height, file_size_kb, jpeg_quality_est",1.0,0.0,1.0,0.0,2250,semua metadata
+file asli,Manusia vs Stable Diffusion,"file_size_kb, jpeg_quality_est, subsampling, progressive, has_exif","file_size_kb, jpeg_quality_est",1.0,0.0,1.0,0.0,2250,tanpa dimensi
+file asli,Manusia vs Stable Diffusion,file_size_kb,file_size_kb,0.9968888888888889,0.002266230894930141,0.9999555555555556,7.825251938514673e-05,2250,ukuran file saja
+setelah normalisasi,AI vs manusia (semua),file_size_kb,file_size_kb,0.5353333333333333,0.018690461025168255,0.5638955555555556,0.016975087555911577,3000,ukuran file saja
+setelah normalisasi,Manusia vs Latent Diffusion,file_size_kb,file_size_kb,0.6675555555555556,0.006531972647421809,0.6372088888888889,0.023800613541215095,2250,ukuran file saja
+setelah normalisasi,Manusia vs Stable Diffusion,file_size_kb,file_size_kb,0.7844444444444445,0.005794846582402349,0.765,0.013222048551613881,2250,ukuran file saja

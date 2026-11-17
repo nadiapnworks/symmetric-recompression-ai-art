@@ -1,0 +1,7 @@
+sumber,split,n,minimum,median,maksimum,nilai_unik
+LD,test,10000,74.8,74.8,74.8,1
+LD,train,52092,74.8,74.8,74.8,1
+SD,test,10000,74.8,74.8,74.8,1
+SD,train,52923,74.8,74.8,74.8,1
+manusia,test,10000,95.0,95.0,95.0,1
+manusia,train,50000,95.0,95.0,95.0,1

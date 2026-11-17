@@ -1,0 +1,4 @@
+sample_id,sumber,file,gaya,korelasi_satu_sisi_simetris
+AB2850,Human,AB2850.jpg,ukiyo_e,0.4336436572186206
+AB1405,Latent Diffusion,AB1405.jpg,post_impressionism,0.4856855305504913
+AB0531,Stable Diffusion,AB0531.jpg,baroque,0.38978675252566625
